@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>373928070399-juc96ir20d5pt73ad49pd9j24n22mrnn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.373928070399-juc96ir20d5pt73ad49pd9j24n22mrnn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDbJlb6N3RJ8gyPAfz9WgljgD4M6seG2lw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>373928070399</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Dhruvil.InstagramClone</string>
+	<key>PROJECT_ID</key>
+	<string>instagramclone-a6d34</string>
+	<key>STORAGE_BUCKET</key>
+	<string>instagramclone-a6d34.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:373928070399:ios:39ba3718359ce0ccb390ca</string>
+	<key>DATABASE_URL</key>
+	<string>https://instagramclone-a6d34.firebaseio.com</string>
+</dict>
+</plist>
