@@ -31,6 +31,7 @@
 		A1A8EE2F2568899D008DAAA3 /* DatabaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8EE2E2568899D008DAAA3 /* DatabaseConnection.swift */; };
 		A1A8EE3225688A36008DAAA3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8EE3125688A36008DAAA3 /* AuthManager.swift */; };
 		A1A8EE3525688A6D008DAAA3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8EE3425688A6D008DAAA3 /* StorageManager.swift */; };
+		A1A8EE5225698107008DAAA3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8EE5125698107008DAAA3 /* Extensions.swift */; };
 		C2B2F5871AB6AD8C4E0B8A58 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF995E62EDB6EB73E7E027D /* Pods_InstagramClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		A1A8EE2E2568899D008DAAA3 /* DatabaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnection.swift; sourceTree = "<group>"; };
 		A1A8EE3125688A36008DAAA3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		A1A8EE3425688A6D008DAAA3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		A1A8EE5125698107008DAAA3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B9960C978C960202AD38D9B8 /* Pods-InstagramClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.release.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				A1A8EE2E2568899D008DAAA3 /* DatabaseConnection.swift */,
 				A1A8EE3125688A36008DAAA3 /* AuthManager.swift */,
 				A1A8EE3425688A6D008DAAA3 /* StorageManager.swift */,
+				A1A8EE5125698107008DAAA3 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				A1A8EE0525687B37008DAAA3 /* SearchResultViewController.swift in Sources */,
 				A1A8EDC2256876EE008DAAA3 /* AppDelegate.swift in Sources */,
 				A1A8EE0225687B1F008DAAA3 /* SearchViewController.swift in Sources */,
+				A1A8EE5225698107008DAAA3 /* Extensions.swift in Sources */,
 				A1A8EDEF256879C8008DAAA3 /* LoginViewController.swift in Sources */,
 				A1A8EDE825687946008DAAA3 /* ProfileViewController.swift in Sources */,
 				A1A8EE3225688A36008DAAA3 /* AuthManager.swift in Sources */,
@@ -502,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPAWQLXXWM;
 				INFOPLIST_FILE = InstagramClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPAWQLXXWM;
 				INFOPLIST_FILE = InstagramClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
