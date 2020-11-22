@@ -8,6 +8,7 @@
 import UIKit
 import SafariServices
 
+
 class LoginViewController: UIViewController {
     
     struct Constants {
@@ -91,16 +92,19 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
+        
         createAccountButton.addTarget(self, action: #selector(didTapCreateAccountButton), for: .touchUpInside)
+        
         termsButton.addTarget(self, action: #selector(didTapTermsButton), for: .touchUpInside)
+        
         privacyButton.addTarget(self, action: #selector(didTapPrivacyButton), for: .touchUpInside)
+        
         usernameEmailField.delegate = self
         passwordField.delegate = self
+        
         addSubView()
+        
         view.backgroundColor = .systemBackground
-        print(view.height-view.safeAreaInsets.bottom-50)
-        print(view.height-view.safeAreaInsets.bottom+350)
-        print(view.bounds.size.height)
     }
     
     override func viewDidLayoutSubviews() {
@@ -162,6 +166,30 @@ class LoginViewController: UIViewController {
             return
         }
         //login func
+        var username: String?
+        var email: String?
+        if usernameEmail.contains("@"), usernameEmail.contains("."){
+            //email
+            email = usernameEmail
+        }else{
+            //username
+            username = usernameEmail
+        }
+        
+        AuthManager.shared.loginUser(username: username, email: email, password: password) { success in
+            DispatchQueue.main.async {
+                if success{
+                    //user logged in
+                    self.dismiss(animated: true, completion: nil)
+                }else{
+                    //error
+                    let alert = UIAlertController(title: "Login Error", message: "Unable to log in", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dissmiss", style: .cancel, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            }
+           
+        }
     }
     @objc private func didTapTermsButton(){
         guard let url = URL(string: "https://help.instagram.com/581066165581870?ref=dp") else { return }
@@ -175,7 +203,9 @@ class LoginViewController: UIViewController {
     }
     @objc private func didTapCreateAccountButton(){
         let vc = RegistrationViewController()
-        present(vc, animated: true)
+        vc.title = "Create Account"
+        
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
     
 
